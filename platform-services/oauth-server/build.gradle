@@ -4,8 +4,4 @@ apply plugin: "io.spring.dependency-management"
 dependencies {
     compile "org.springframework.boot:spring-boot-starter-web"
     compile "org.springframework.security.oauth.boot:spring-security-oauth2-autoconfigure:$springSecurityOAuthAutoconfigVersion"
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> ca6ee5a... Add security

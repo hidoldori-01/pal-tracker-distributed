@@ -14,23 +14,15 @@ public class SecurityConfig extends AuthorizationServerConfigurerAdapter {
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
         clients.inMemory()
-<<<<<<< HEAD
                 .withClient("tracker-client")
                 .secret("supersecret")
                 .authorizedGrantTypes("client_credentials")
                 .scopes("openid");
-=======
-            .withClient("tracker-client")
-            .secret("supersecret")
-            .authorizedGrantTypes("client_credentials")
-            .scopes("openid");
->>>>>>> ca6ee5a... Add security
     }
 
     @Override
     @SuppressWarnings("deprecation")
     public void configure(AuthorizationServerSecurityConfigurer oauthServer)
-<<<<<<< HEAD
             throws Exception {
         oauthServer
                 // NoOpPasswordEncoder is not secure but will be OK for local testing purposes.
@@ -39,13 +31,4 @@ public class SecurityConfig extends AuthorizationServerConfigurerAdapter {
                 .checkTokenAccess("isAuthenticated()");
     }
 }
-=======
-        throws Exception {
-        oauthServer
-            // NoOpPasswordEncoder is not secure but will be OK for local testing purposes.
-            .passwordEncoder(NoOpPasswordEncoder.getInstance())
-            .tokenKeyAccess("permitAll()")
-            .checkTokenAccess("isAuthenticated()");
-    }
-}
->>>>>>> ca6ee5a... Add security
+

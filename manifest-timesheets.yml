@@ -11,9 +11,5 @@ applications:
   services:
   - tracker-timesheets-database
   - tracker-service-registry
-<<<<<<< HEAD
-  - tracker-circuit-breaker-dashboard
-=======
   - tracker-circuit-breaker-dashboard
   - tracker-sso
->>>>>>> ca6ee5a... Add security

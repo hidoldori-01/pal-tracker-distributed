@@ -10,12 +10,15 @@ import org.springframework.context.annotation.Configuration;
 public class RestConfig {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 //    @Bean
 //    @LoadBalanced
 //    public RestOperations restOperations() {
 //        return new RestTemplate();
 //    }
 
+=======
+>>>>>>> ca6ee5a... Add security
 =======
 >>>>>>> ca6ee5a... Add security
     @Bean

@@ -34,7 +34,11 @@ public class OauthResourceServerConfig extends ResourceServerConfigurerAdapter {
         resources.resourceId(null);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ca6ee5a... Add security
 =======
 }
 >>>>>>> ca6ee5a... Add security
