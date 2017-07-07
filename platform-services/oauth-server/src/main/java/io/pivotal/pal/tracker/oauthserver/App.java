@@ -10,4 +10,8 @@ public class App extends AuthorizationServerConfigurerAdapter {
     public static void main(String[] args) {
         SpringApplication.run(App.class, args);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ca6ee5a... Add security

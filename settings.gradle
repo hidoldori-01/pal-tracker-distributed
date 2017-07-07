@@ -23,5 +23,8 @@ include "databases:timesheets-database"
 include "integration-test"
 
 include "platform-services:eureka-server"
+<<<<<<< HEAD
 
+=======
+>>>>>>> ca6ee5a... Add security
 include "platform-services:oauth-server"

@@ -14,10 +14,18 @@ import org.springframework.web.client.RestOperations;
 
 import java.util.TimeZone;
 
+<<<<<<< HEAD
 @EnableWebSecurity
 @EnableResourceServer
 @EnableOAuth2Client
+=======
+
+@EnableWebSecurity
+@EnableResourceServer
+@EnableCircuitBreaker
+>>>>>>> ca6ee5a... Add security
 @EnableEurekaClient
+@EnableOAuth2Client
 @SpringBootApplication
 @EnableCircuitBreaker
 @ComponentScan({"io.pivotal.pal.tracker.allocations", "io.pivotal.pal.tracker.restsupport"})

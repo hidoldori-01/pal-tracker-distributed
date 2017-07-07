@@ -33,4 +33,8 @@ public class OauthResourceServerConfig extends ResourceServerConfigurerAdapter {
         // do not require a resource id in AccessToken.
         resources.resourceId(null);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> ca6ee5a... Add security
