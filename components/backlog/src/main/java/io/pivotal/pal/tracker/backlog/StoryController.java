@@ -42,7 +42,6 @@ public class StoryController {
             .collect(toList());
     }
 
-
     private boolean projectIsActive(long projectId) {
         ProjectInfo project = client.getProject(projectId);
         return project != null && project.active;
