@@ -1,7 +1,6 @@
 package io.pivotal.pal.tracker.timesheets;
 
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
-import jdk.nashorn.internal.runtime.logging.DebugLogger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.web.client.RestOperations;
