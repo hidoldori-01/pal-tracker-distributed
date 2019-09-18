@@ -1,8 +1,6 @@
 package io.pivotal.pal.tracker.registration;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-<<<<<<< HEAD
-<<<<<<< HEAD
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,35 +11,24 @@ import org.springframework.security.oauth2.client.resource.OAuth2ProtectedResour
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
 import org.springframework.web.client.RestOperations;
-=======
+
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
 import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
->>>>>>> ca6ee5a... Add security
-=======
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.oauth2.config.annotation.web.configuration.ResourceServerConfigurerAdapter;
-import org.springframework.security.oauth2.config.annotation.web.configurers.ResourceServerSecurityConfigurer;
->>>>>>> ca6ee5a... Add security
 
 @Configuration
 @ConditionalOnProperty(value = "application.oauth-enabled", matchIfMissing = true)
 public class OauthResourceServerConfig extends ResourceServerConfigurerAdapter {
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     @Bean
     @LoadBalanced
     public RestOperations restTemplate(OAuth2ProtectedResourceDetails resource, OAuth2ClientContext oauth2ClientContext) {
         return new OAuth2RestTemplate(resource, oauth2ClientContext);
     }
 
-=======
->>>>>>> ca6ee5a... Add security
-=======
->>>>>>> ca6ee5a... Add security
+
     @Override
     public void configure(HttpSecurity http) throws Exception {
         // enforce authentication on our API endpoints.
@@ -53,12 +40,6 @@ public class OauthResourceServerConfig extends ResourceServerConfigurerAdapter {
         // do not require a resource id in AccessToken.
         resources.resourceId(null);
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> ca6ee5a... Add security
-=======
-}
->>>>>>> ca6ee5a... Add security
+
